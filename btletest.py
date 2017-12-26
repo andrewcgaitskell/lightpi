@@ -4,10 +4,11 @@ import time
 import uuid as uuidlib
 from bluepy.btle import UUID, Peripheral
 
-u = uuidlib.UUID('{14128a7604d16c4f7e53f2e81000b119}')
+u = uuidlib.UUID(u'14128a7604d16c4f7e53f2e81000b119')
+
 print u
 
-button_uuid = UUID(u)
+button_uuid = u # UUID(u)
  
 p = Peripheral("98:4f:ee:0d:16:59", "random")
  
