@@ -1,0 +1,24 @@
+pi@lightpi:/usr/local/lib/python2.7/dist-packages/bluepy $ sudo python blescan.py
+Scanning for devices...
+    Device (new): 48:d7:05:b2:db:ac (public), -61 dBm 
+	Flags: <06>
+	Manufacturer: <4c0010020b00>
+    Device (new): 1c:1a:c0:a5:0b:79 (public), -89 dBm 
+	Flags: <1a>
+	Manufacturer: <4c000906030fc0a80102>
+    Device (new): b0:b4:48:bd:7a:87 (public), -59 dBm 
+	Flags: <05>
+	Incomplete 16b Services: <80aa>
+	Complete Local Name: 'CC2650 SensorTag'
+	Tx Power: <00>
+	0x12: <08002003>
+	Manufacturer: <0d00030000>
+  
+    Device (new): 4e:c7:ca:3e:a3:fa (random), -61 dBm 
+	Flags: <06>
+	Manufacturer: <4c000c0e00f2d94f4ecb77c5df6917165d9f>
+  
+  Device (new): 98:4f:ee:0d:16:59 (public), -59 dBm 
+	Flags: <06>
+	Complete Local Name: 'BtnLED'
+	Complete 128b Services: <14128a7604d16c4f7e53f2e81000b119>
