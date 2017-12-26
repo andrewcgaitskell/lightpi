@@ -3,7 +3,7 @@ import struct
 import time
 from bluepy.bluepy.btle import UUID, Peripheral
  
-button_uuid = UUID(0x19b10012-e8f2-537e-4f6c-d104768a1214)
+button_uuid = UUID("0x19b10012-e8f2-537e-4f6c-d104768a1214")
  
 p = Peripheral("98:4F:EE:0D:16:59", "random")
  
