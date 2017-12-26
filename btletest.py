@@ -1,9 +1,12 @@
 import binascii
 import struct
 import time
+import uuid as uuidlib
 from bluepy.btle import UUID, Peripheral
- 
-button_uuid = UUID("19B10012-E8F2-537E-4F6C-D104768A1214")
+
+u = uuidlib.UUID('{19B10012-E8F2-537E-4F6C-D104768A1214}')
+
+button_uuid = UUID(u)
  
 p = Peripheral("98:4F:EE:0D:16:59", "random")
  
