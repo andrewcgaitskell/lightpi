@@ -1,7 +1,7 @@
 import binascii
 import struct
 import time
-from bluepy.bluepy.btle import UUID, Peripheral
+from bluepy.btle import UUID, Peripheral
  
 button_uuid = UUID("0x19b10012-e8f2-537e-4f6c-d104768a1214")
  
