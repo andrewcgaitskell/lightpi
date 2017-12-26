@@ -10,7 +10,7 @@ print u
 
 button_uuid = u # UUID(u)
  
-p = Peripheral("98:4f:ee:0d:16:59", "random")
+p = Peripheral("98:4F:EE:0D:16:59", "random")
  
 ch = p.getCharacteristics(uuid=button_uuid)
 
