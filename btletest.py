@@ -5,6 +5,7 @@ import uuid as uuidlib
 from bluepy.btle import UUID, Peripheral
 
 u = uuidlib.UUID('{19B10010-E8F2-537E-4F6C-D104768A1214}')
+print u
 
 button_uuid = UUID(u)
  
