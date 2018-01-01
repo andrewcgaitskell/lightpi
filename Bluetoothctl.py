@@ -59,7 +59,7 @@ class Bluetoothctl:
                         attribute_list = info_string[device_position:].split(" ", 4)
                         device = {
                             "mac_address": attribute_list[1],
-                            "name": attribute_list[2],
+                            #"name": attribute_list[2],
                             "rssi": attribute_list[4]
                         }
                     except ValueError:
