@@ -14,6 +14,7 @@ class Bluetoothctl:
     def __init__(self):
         #out = subprocess.check_output("rfkill unblock bluetooth", shell = True)
         self.child = pexpect.spawn("bluetoothctl", echo = False)
+        self.RSSI = []
 
     def get_output(self, command, pause = 0):
         """Run a command in bluetoothctl prompt, return output as a list of lines."""
@@ -25,7 +26,9 @@ class Bluetoothctl:
             raise BluetoothctlError("Bluetoothctl failed after running " + command)
         
         print self.child.before.split("\r\n")
-        
+        e = self.child.before.split("\r\n")
+        if "RSSI:" in e:
+            self.RSSI.extend(e)
         return self.child.before.split("\r\n")
 
     def start_scan(self):
@@ -179,3 +182,4 @@ if __name__ == "__main__":
         time.sleep(1)
 
     print(bl.get_discoverable_devices())
+    print(bl.RSSI)
