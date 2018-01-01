@@ -62,7 +62,7 @@ class Bluetoothctl:
                             "name": attribute_list[2],
                             "rssi": attribute_list[4]
                         }
-                     except ValueError:
+                    except ValueError:
                         pass
 
         return device
