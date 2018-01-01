@@ -3,7 +3,7 @@
 from bluepy import btle
 from time import sleep
 
-sensor = btle.Peripheral('A0:xx:xx:xx:xx:xx')
+sensor = btle.Peripheral('B0:B4:48:BD:7A:87')
 
 sensor.writeCharacteristic(0x24, '\x01', withResponse=True)
 
