@@ -55,12 +55,15 @@ class Bluetoothctl:
                 pass
             else:
                 if device_position > -1:
-                    attribute_list = info_string[device_position:].split(" ", 4)
-                    device = {
-                        "mac_address": attribute_list[1],
-                        "name": attribute_list[2],
-                        "rssi": attribute_list[4]
-                    }
+                    try:
+                        attribute_list = info_string[device_position:].split(" ", 4)
+                        device = {
+                            "mac_address": attribute_list[1],
+                            "name": attribute_list[2],
+                            "rssi": attribute_list[4]
+                        }
+                     except ValueError:
+                        pass
 
         return device
 
