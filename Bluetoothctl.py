@@ -23,7 +23,9 @@ class Bluetoothctl:
 
         if start_failed:
             raise BluetoothctlError("Bluetoothctl failed after running " + command)
-
+        
+        print self.child.before.split("\r\n")
+        
         return self.child.before.split("\r\n")
 
     def start_scan(self):
