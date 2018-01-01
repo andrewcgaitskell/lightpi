@@ -60,7 +60,7 @@ class Bluetoothctl:
                         device = {
                             "mac_address": attribute_list[1],
                             #"name": attribute_list[2],
-                            "rssi": attribute_list[4]
+                            "rssi": attribute_list[3]
                         }
                     except ValueError:
                         pass
