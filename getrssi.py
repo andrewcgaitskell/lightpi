@@ -1,6 +1,6 @@
 import subprocess, time, os, sys
 
-MAC_ADDR = "XX:XX:XX:XX:XX:XX"
+MAC_ADDR = "98:4F:EE:0D:16:59"
 
 thecommand = "sudo ./btmon"
 thecommand2 = "sudo hcitool lescan"
