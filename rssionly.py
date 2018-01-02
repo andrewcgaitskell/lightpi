@@ -6,5 +6,5 @@ import sys
 child = pexpect.spawn("bluetoothctl", echo = False)
 child.send("scan on" + "\n")
 
-print child
+print child.before
 
