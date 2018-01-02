@@ -18,7 +18,7 @@ for i in range(0, 10):
     
 print out
 
-out = child.send("devices" + "\n")
+out = child.before()
 
 for i in range(0, 10):
     print(i)
