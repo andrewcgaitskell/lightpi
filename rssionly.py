@@ -24,7 +24,8 @@ start_failed = child.expect(["bluetooth", pexpect.EOF])
 if start_failed:
     raise BluetoothctlError("Bluetoothctl failed after running " + command)
 
-out = child.before.split("\r\n")
+#out = child.before.split("\r\n")
+out = child.before
 
 for i in range(0, 10):
     print(i)
