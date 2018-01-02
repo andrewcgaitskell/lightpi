@@ -53,3 +53,14 @@ print(dsplit)
 
 dsplit = out.split("Device")
 print(dsplit)
+
+rssilist = []
+
+for ds in dsplit:
+    rsi = ds.index("RSSI")
+    if rsi > 0:
+        dsa = ds.lstrip()
+        rssilist.append([dsa])
+
+print rssilist
+    
