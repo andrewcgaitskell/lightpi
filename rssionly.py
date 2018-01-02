@@ -34,3 +34,15 @@ for i in range(0, 10):
 print type(out)
 
 print out
+device_count = out.count("Device")
+
+out_working = out
+
+dl = []
+
+for dc in device_count:
+    di = out_working.index("Device")
+    dd = out_working[di:17]
+    dl.extend([dd])
+    
+print(dl)
