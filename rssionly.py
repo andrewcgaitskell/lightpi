@@ -63,7 +63,7 @@ for ds in dsplit:
         dsa = ds.lstrip()
         dsas = dsa.split("\r\n")
         dsal = dsas[0].split(" ")
-        dsala = [dsal[0],[dsal[2]]
+        dsala = [dsal[0],dsal[2]]
         rssilist.append(dsala)
     except:
         pass
