@@ -57,10 +57,13 @@ print(dsplit)
 rssilist = []
 
 for ds in dsplit:
-    rsi = ds.index("RSSI")
-    if rsi > 0:
+    try:
+        rsi = ds.index("RSSI")
         dsa = ds.lstrip()
         rssilist.append([dsa])
+     except ValueError:
+        pass
+    
 
 print rssilist
     
