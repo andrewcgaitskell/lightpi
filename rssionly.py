@@ -84,7 +84,7 @@ dil = [item[0] for item in devicelist]
 for r in rssilist:
     
     di = dil.index( r[0] ) 
-    r.extend(devicelist[di][1])
+    r.extend([devicelist[di][1]])
     fulldevlist.append(r)
 
 print fulldevlist    
