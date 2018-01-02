@@ -61,7 +61,7 @@ for ds in dsplit:
         rsi = ds.index("RSSI")
         dsa = ds.lstrip()
         rssilist.append([dsa])
-     except ValueError:
+    except:
         pass
     
 
