@@ -40,9 +40,16 @@ out_working = out
 
 dl = []
 
-for dc in device_count:
+for dc in range(0,device_count):
     di = out_working.index("Device")
-    dd = out_working[di:17]
+    dr = out_working.index("\r\n")
+    dd = out_working[di:dr]
     dl.extend([dd])
     
 print(dl)
+
+dsplit = out.split("\r\n")
+print(dsplit)
+
+dsplit = out.split("Device")
+print(dsplit)
