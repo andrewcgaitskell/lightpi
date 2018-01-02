@@ -59,8 +59,12 @@ rssilist = []
 for ds in dsplit:
     try:
         rsi = ds.index("RSSI")
+       
         dsa = ds.lstrip()
-        rssilist.append([dsa])
+        dsas = dsa.split("\r\n")
+        dsal = dsas[0].split(" ")
+        dsala = [dsal[0],[dsal[2]]
+        rssilist.append(dsala)
     except:
         pass
     
