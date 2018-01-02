@@ -20,7 +20,7 @@ print out
 
 out = child.before
 
-for i in range(0, 10):
+for i in range(0, 20):
     print(i)
     time.sleep(1)
 
