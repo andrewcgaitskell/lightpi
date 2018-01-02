@@ -18,9 +18,15 @@ for i in range(0, 10):
     
 print out
 
-out = child.before
+child.send("devices" + "\n")
+time.sleep(pause)
+start_failed = child.expect(["bluetooth", pexpect.EOF])
+if start_failed:
+    raise BluetoothctlError("Bluetoothctl failed after running " + command)
 
-for i in range(0, 20):
+out = child.before.split("\r\n")
+
+for i in range(0, 10):
     print(i)
     time.sleep(1)
 
