@@ -55,6 +55,7 @@ dsplit = out.split("Device")
 print(dsplit)
 
 rssilist = []
+devicelist = []
 
 for ds in dsplit:
     try:
@@ -66,8 +67,14 @@ for ds in dsplit:
         dsala = [dsal[0],dsal[2]]
         rssilist.append(dsala)
     except:
-        pass
+        dsa = ds.lstrip()
+        dsas = dsa.split("\r\n")
+        dsal = dsas[0].split(" ")
+        dsala = [dsal[0],dsal[1]]
+        devicelist.append(dsala)
     
 
 print rssilist
+print devicelist
+
     
