@@ -2,6 +2,7 @@ import time
 import pexpect
 import subprocess
 import sys
+pause = 0
 
 child = pexpect.spawn("bluetoothctl", echo = False)
 child.send("scan on" + "\n")
