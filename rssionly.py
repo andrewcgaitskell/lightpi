@@ -18,7 +18,7 @@ for i in range(0, 10):
     
 print out
 
-out = child.before()
+out = child.before
 
 for i in range(0, 10):
     print(i)
